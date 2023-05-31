@@ -1,0 +1,17 @@
+@import './tailwind.css';
+
+.btn {
+    @apply cursor-pointer font-semibold rounded-[10px];
+}
+
+.btn-fill {
+    @apply bg-ared text-white;
+}
+
+.btn-outline {
+    @apply bg-white border border-border2;
+}
+
+.container {
+    @apply max-w-screen-xl px-4 xl:mx-auto xl:px-0;
+}
