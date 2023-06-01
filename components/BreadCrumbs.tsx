@@ -22,7 +22,7 @@ const BreadCrumbs: FC<IBreadCrumbsProps> = ({ crumbs }) => {
           </li>
           <span>/</span>
           {crumbs.map((crumb) => (
-            <li key={crumb.name} className="">
+            <li key={crumb.name} className="flex items-center gap-x-3">
               {crumb.link ? (
                 <>
                   <Link href={crumb.link} className="hover:text-ared">
