@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import LogoIcon from '~/assets/icons/logo.svg';
 import PhoneIcon from '~/assets/icons/phone.svg';
