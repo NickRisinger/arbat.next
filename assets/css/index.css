@@ -1,5 +1,9 @@
 @import './tailwind.css';
 
+body {
+    @apply text-ablack
+}
+
 .btn {
     @apply cursor-pointer font-semibold rounded-[10px];
 }

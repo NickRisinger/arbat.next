@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import { FC } from 'react';
 import LogoIcon from '~/assets/icons/logo.svg';
 import PhoneIcon from '~/assets/icons/phone.svg';
 import MapMarkerIcon from '~/assets/icons/mapMarker.svg';
 import HeartIcon from '~/assets/icons/heart.svg';
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   return (
     <header className="bg-white py-6 lg:border-b lg:border-agray">
       <div className="container flex justify-between">
