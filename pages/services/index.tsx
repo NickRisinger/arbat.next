@@ -9,7 +9,11 @@ const ServicesPage: NextPage = () => {
 };
 
 ServicesPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout title="Главная" breadCrumbs={[{ name: 'Услуги' }]}>
+      {page}
+    </AppLayout>
+  );
 };
 
 export default ServicesPage;

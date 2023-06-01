@@ -9,7 +9,11 @@ const FaqPage: NextPage = () => {
 };
 
 FaqPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout title="Главная" breadCrumbs={[{ name: 'Вопросы и ответы' }]}>
+      {page}
+    </AppLayout>
+  );
 };
 
 export default FaqPage;

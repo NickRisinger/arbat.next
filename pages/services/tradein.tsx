@@ -9,7 +9,17 @@ const TradeInPage: NextPage = () => {
 };
 
 TradeInPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout
+      title="Главная"
+      breadCrumbs={[
+        { name: 'Услуги', link: '/services' },
+        { name: 'Trade-In' },
+      ]}
+    >
+      {page}
+    </AppLayout>
+  );
 };
 
 export default TradeInPage;

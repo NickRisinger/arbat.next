@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps';
 import AppLayout from '~/layouts/AppLayout';
+import { useRouter } from 'next/router';
 
 const IndexPage: NextPage = () => {
+  const router = useRouter();
+  console.log(router);
   const [location, setLocation] = useState<{
     latitude: number;
     longitude: number;

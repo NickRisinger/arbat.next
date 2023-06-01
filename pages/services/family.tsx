@@ -9,7 +9,17 @@ const FamilyPage: NextPage = () => {
 };
 
 FamilyPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout
+      title="Главная"
+      breadCrumbs={[
+        { name: 'Услуги', link: '/services' },
+        { name: 'Арбат-family' },
+      ]}
+    >
+      {page}
+    </AppLayout>
+  );
 };
 
 export default FamilyPage;

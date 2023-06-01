@@ -9,7 +9,17 @@ const UrgentBuyoutPage: NextPage = () => {
 };
 
 UrgentBuyoutPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout
+      title="Главная"
+      breadCrumbs={[
+        { name: 'Услуги', link: '/services' },
+        { name: 'Срочный выкуп' },
+      ]}
+    >
+      {page}
+    </AppLayout>
+  );
 };
 
 export default UrgentBuyoutPage;

@@ -9,7 +9,17 @@ const InsurancePage: NextPage = () => {
 };
 
 InsurancePage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout
+      title="Главная"
+      breadCrumbs={[
+        { name: 'Услуги', link: '/services' },
+        { name: 'Страхование' },
+      ]}
+    >
+      {page}
+    </AppLayout>
+  );
 };
 
 export default InsurancePage;

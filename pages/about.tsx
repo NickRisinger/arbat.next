@@ -9,7 +9,11 @@ const AboutPage: NextPage = () => {
 };
 
 AboutPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout title="Главная" breadCrumbs={[{ name: 'О компании' }]}>
+      {page}
+    </AppLayout>
+  );
 };
 
 export default AboutPage;

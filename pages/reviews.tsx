@@ -9,7 +9,11 @@ const ReviewsPage: NextPage = () => {
 };
 
 ReviewsPage.getLayout = (page) => {
-  return <AppLayout title="Главная">{page}</AppLayout>;
+  return (
+    <AppLayout title="Главная" breadCrumbs={[{ name: 'Отзывы' }]}>
+      {page}
+    </AppLayout>
+  );
 };
 
 export default ReviewsPage;
